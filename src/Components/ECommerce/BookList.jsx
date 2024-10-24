@@ -59,6 +59,7 @@ const BookList = ({ searchTerm }) => {  // Accept searchTerm as a prop
             <tr>
               <th scope="col" className="px-6 py-3">Title</th>
               <th scope="col" className="px-6 py-3">Tags</th>
+              <th scope='col' className='px-6 py-3'>Images</th>
               <th scope="col" className="px-6 py-3">Action</th>
             </tr>
           </thead>
@@ -72,6 +73,11 @@ const BookList = ({ searchTerm }) => {  // Accept searchTerm as a prop
                   <td className="px-6 py-4">
                     {item?.tags?.map((tag, index) => (
                       <span key={index}>{tag}, </span>
+                    ))}
+                  </td>
+                  <td>
+                  {item?.images?.map((image, index) => (
+                      <span key={index}>{image}, </span>
                     ))}
                   </td>
                   <td className="px-6 py-4">
