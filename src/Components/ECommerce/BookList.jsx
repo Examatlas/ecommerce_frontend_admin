@@ -59,8 +59,11 @@ const BookList = ({ searchTerm }) => {  // Accept searchTerm as a prop
             <tr>
               <th scope="col" className="px-6 py-3">Title</th>
               <th scope="col" className="px-6 py-3">Tags</th>
+
               <th scope='col' className='px-6 py-3'>Images</th>
               <th scope="col" className="px-6 py-3">Action</th>
+
+              <th scope="col" className="px-6 py-3 bg-red-500">Action</th>
             </tr>
           </thead>
           <tbody>
